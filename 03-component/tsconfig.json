@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "preserve",
+        "target": "es2020",
+        "outDir": "dist",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    }
+}
