@@ -1,0 +1,11 @@
+<h1>Peruvian Products</h1>
+<p>
+    Total Products: {{cart.length}}. Worth: PEN {{getTotalPrice()}}
+</p>
+<div>
+    @for(product of products; track product.id) {
+    <!--     <app-product [titleProduct]="product.title" [description]="product.description" [price]="product.price"
+        [id]="product.id"></app-product> -->
+    <app-product [product]="product" (onAddProduct)="addToCart($event)"></app-product>
+    }
+</div>

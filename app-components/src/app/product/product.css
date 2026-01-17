@@ -1,0 +1,42 @@
+div {
+  font-family: Arial, sans-serif;
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price span {
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+}
+
+.price button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
