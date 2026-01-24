@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, NgModule } from "@angular/core";
 import { ListProducts } from "../list-products/list-products";
 
 @Component({
