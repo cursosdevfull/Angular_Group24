@@ -1,7 +1,7 @@
 import { Component, effect, inject, ViewEncapsulation } from '@angular/core';
+import { ProductApplication } from '../../application/product-application';
 import { TProduct } from '../interfaces/product';
 import { Product } from '../product/product';
-import { ProductService } from '../services/product';
 
 @Component({
   selector: 'app-list-product',
@@ -9,12 +9,13 @@ import { ProductService } from '../services/product';
   templateUrl: './list-product.html',
   styleUrl: './list-product.scss',
   encapsulation: ViewEncapsulation.None,
+  providers: [ProductApplication],
 })
 export class ListProduct {
-  productService = inject(ProductService);
+  application = inject(ProductApplication);
 
-  products = this.productService.products;
-  cart = this.productService.cart;
+  products = this.application.getProducts();
+  cart = this.application.getCart();
 
   constructor() {
     effect(() => {
@@ -23,6 +24,6 @@ export class ListProduct {
   }
 
   addToCart(product: TProduct) {
-    this.productService.addToCart(product);
+    this.application.addToCart(product);
   }
 }

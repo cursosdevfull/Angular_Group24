@@ -1,10 +1,11 @@
 import { Injectable, signal } from '@angular/core';
-import { TCart, TProduct } from '../interfaces/product';
+import { ProductPort } from '../ports/product-port';
+import { TCart, TProduct } from '../presentation/interfaces/product';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ProductService {
+export class ProductService implements ProductPort {
   private $products = signal<TProduct[]>([
     { id: 1, name: 'Laptop', price: 1200 },
     { id: 2, name: 'Smartphone', price: 800 },

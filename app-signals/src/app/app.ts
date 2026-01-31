@@ -1,7 +1,7 @@
 import { Component, computed, effect, linkedSignal, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ListProduct } from './list-product/list-product';
-import { Cart } from './cart/cart';
+import { Cart } from './presentation/cart/cart';
+import { ListProduct } from './presentation/list-product/list-product';
 
 @Component({
   selector: 'app-root',

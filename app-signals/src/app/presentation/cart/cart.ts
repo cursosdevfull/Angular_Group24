@@ -1,19 +1,20 @@
 import { Component, inject } from '@angular/core';
+import { ProductApplication } from '../../application/product-application';
 import { CartItem } from '../cart-item/cart-item';
-import { ProductService } from '../services/product';
 
 @Component({
   selector: 'app-cart',
   imports: [CartItem],
   templateUrl: './cart.html',
   styleUrl: './cart.scss',
+  providers: [ProductApplication],
 })
 export class Cart {
-  productService = inject(ProductService);
+  application = inject(ProductApplication);
 
-  cartItems = this.productService.cart;
+  cartItems = this.application.getCart();
 
   removeItem(productId: number) {
-    this.productService.removeFromCart(productId);
+    this.application.removeFromCart(productId);
   }
 }
