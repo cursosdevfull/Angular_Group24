@@ -1,0 +1,14 @@
+<form>
+    <div>
+        <label for="email">Email:</label>
+        <!--         <input type="email" id="email" name="email" [ngModel]="emailValue" (ngModelChange)="emailValue = $event"
+            required> -->
+        <!-- <input type="email" id="email" name="email" [ngModel]="emailValue" (ngModelChange)="save($event)" required> -->
+        <input type="email" id="email" name="email" [(ngModel)]="emailValue" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="passwordValue" required>
+    </div>
+    <button type="button" (click)="onLogin()">Login</button>
+</form>
