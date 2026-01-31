@@ -1,0 +1,6 @@
+<h2>Carrito</h2>
+<ul>
+    @for(cartItem of cartItems(); track cartItem.product.id) {
+    <app-cart-item [cartItem]="cartItem" (onRemove)="removeItem($event)"></app-cart-item>
+    }
+</ul>

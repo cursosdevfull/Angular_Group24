@@ -1,0 +1,38 @@
+// Estilos para el componente de producto
+.product-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+	margin-bottom: 1rem;
+	padding: 1rem 1.5rem;
+	transition: box-shadow 0.2s;
+}
+
+.product-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.product-price {
+	color: #388e3c;
+	font-weight: bold;
+	margin-top: 0.3rem;
+}
+
+.add-cart-btn {
+	background: #1976d2;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 0.5rem 1.2rem;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.add-cart-btn:hover {
+	background: #1565c0;
+}
