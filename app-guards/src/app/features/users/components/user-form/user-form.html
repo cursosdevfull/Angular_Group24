@@ -1,0 +1,9 @@
+<p>user-form works!</p>
+<form>
+    <input type="text" placeholder="name" (input)="changeName($event.target.value)" value="{{name}}"><br>
+    <input type="text" placeholder="lastname" (input)="changeLastname($event.target.value)" value="{{lastname}}"><br>
+    <p>Full name: {{name}} {{lastname}}</p>
+    <br>
+    <button (click)="save()" type="button">Save</button><button (click)="showStatusState()" type="button">Show Status
+        State</button>
+</form>

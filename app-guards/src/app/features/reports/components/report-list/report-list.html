@@ -1,0 +1,46 @@
+<div class="report-list-container">
+    <div class="header">
+        <h2 class="title">Reports</h2>
+        <p class="subtitle">Select a report type to view detailed analytics</p>
+    </div>
+
+    <div class="report-cards">
+        <a routerLink="by-hour" class="report-card">
+            <div class="card-icon">⏰</div>
+            <div class="card-content">
+                <h3 class="card-title">Report by Hour</h3>
+                <p class="card-description">View hourly activity and performance metrics</p>
+            </div>
+            <div class="card-arrow">→</div>
+        </a>
+
+        <a routerLink="by-range-date" class="report-card">
+            <div class="card-icon">📅</div>
+            <div class="card-content">
+                <h3 class="card-title">Report by Range Date</h3>
+                <p class="card-description">Analyze data within custom date ranges</p>
+            </div>
+            <div class="card-arrow">→</div>
+        </a>
+
+        <a routerLink="by-service" class="report-card">
+            <div class="card-icon">🛠️</div>
+            <div class="card-content">
+                <h3 class="card-title">Report by Service</h3>
+                <p class="card-description">Track service usage and statistics</p>
+            </div>
+            <div class="card-arrow">→</div>
+        </a>
+
+        <a routerLink="scorecard" class="report-card">
+            <div class="card-icon">🛠️</div>
+            <div class="card-content">
+                <h3 class="card-title">Report Scorecard</h3>
+                <p class="card-description">Balance Scorecard analytics and insights</p>
+            </div>
+            <div class="card-arrow">→</div>
+        </a>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
