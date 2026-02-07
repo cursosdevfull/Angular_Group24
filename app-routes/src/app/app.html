@@ -1,0 +1,21 @@
+<h1>{{currentDate()}}</h1>
+
+<ul>
+    <li><a routerLink="/">Home</a></li>
+    <!--     <li><a [routerLink]="[{ outlets: { main: ['login'] } }]">Login</a></li> -->
+    <li><a routerLink="/login">Login</a></li>
+    <li><a routerLink="/user">User</a></li>
+    <li><a routerLink="/user/summary">User Summary</a></li>
+    <li><a routerLink="/user/20">User 20</a></li>
+    <li><a routerLink="/user/20/report">User 20 Report</a></li>
+    <li><a routerLink="/user/20/activities/instagram">User 20 Activities Instagram</a></li>
+</ul>
+<hr>
+<h2>Default</h2>
+<router-outlet></router-outlet>
+<hr>
+<h2>Main</h2>
+<router-outlet name="main"></router-outlet>
+<hr>
+<h2>Sidebar</h2>
+<router-outlet name="sidebar"></router-outlet>
