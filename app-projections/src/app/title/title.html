@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h1>{{title()}}</h1>
+        </div>
+        <div class="col-4">
+            <ng-content select=".boton"></ng-content>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ng-content select="[avatar]"></ng-content>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ng-content select="h2"></ng-content>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ng-content select="#email"></ng-content>
+        </div>
+    </div>
+</div>
