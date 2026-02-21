@@ -1,0 +1,84 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <form class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h4 class="card-title mb-0">Reactive Forms</h4>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="fg">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Name *</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    formControlName="name">
+                                <app-alert-error-reactive [control]="fg.controls['name']"
+                                    title="Name"></app-alert-error-reactive>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastname" class="form-label">Last Name *</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Enter your last name"
+                                    formControlName="lastname">
+                                <app-alert-error-reactive [control]="fg.controls['lastname']"
+                                    title="Last Name"></app-alert-error-reactive>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    formControlName="email">
+                            </div>
+                            <app-alert-error-reactive [control]="fg.controls['email']"
+                                title="Email"></app-alert-error-reactive>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password *</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password"
+                                formControlName="password" minlength="6">
+                            <div class="form-text">Password must be at least 6 characters long.</div>
+                            <app-alert-error-reactive [control]="fg.controls['password']"
+                                title="Password"></app-alert-error-reactive>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="confirmPassword" class="form-label">Confirm Password *</label>
+                            <input type="password" class="form-control" id="confirmPassword"
+                                placeholder="Confirm your password" formControlName="confirmPassword">
+                            <app-alert-error-reactive [control]="fg.controls['confirmPassword']"
+                                title="Confirm Password"></app-alert-error-reactive>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="termsConditions"
+                                    formControlName="termsConditions">
+                                <label class="form-check-label" for="termsConditions">
+                                    I agree to the <a href="#" class="text-primary">Terms and Conditions</a> and
+                                    <a href="#" class="text-primary">Privacy Policy</a> *
+                                </label>
+                                <app-alert-error-reactive [control]="fg.controls['termsConditions']"
+                                    title="Terms and Conditions"></app-alert-error-reactive>
+                            </div>
+                        </div>
+                        <app-alert-error-reactive [control]="fg" title="Password Mismatch"></app-alert-error-reactive>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-success btn-lg" (click)="save()">
+                                <i class="fas fa-save me-2"></i>
+                                Save Registration
+                            </button>
+                            <button type="reset" class="btn btn-outline-secondary" (click)="resetForm()">
+                                <i class="fas fa-undo me-2"></i>
+                                Reset Form
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+@if(control.errors && control.touched)
+{
+@let errorMessages = getErrorMessages(title, control);
+@for(message of errorMessages; track message.id)
+{
+<div class="error">{{ message.message }}</div>
+}
+}
