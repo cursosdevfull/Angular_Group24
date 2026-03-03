@@ -1,0 +1,122 @@
+$primary: #6b9ece;
+$primary-hover: #5688b8;
+$text-dark: #3a4a5c;
+$text-muted: #8a9bae;
+$bg-soft: #f0f4f8;
+$card-bg: #ffffff;
+$input-bg: #f7f9fc;
+$input-border: #dce4ee;
+$input-focus: #b5cfe6;
+$shadow: rgba(107, 158, 206, 0.12);
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: $bg-soft;
+  background-image: url('/assets/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-card {
+  background: $card-bg;
+  border-radius: 20px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 32px $shadow;
+  backdrop-filter: blur(8px);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 36px;
+
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: $text-dark;
+    margin: 0 0 8px;
+    letter-spacing: -0.5px;
+  }
+
+  p {
+    font-size: 14px;
+    color: $text-muted;
+    margin: 0;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  label {
+    font-size: 13px;
+    font-weight: 500;
+    color: $text-dark;
+    padding-left: 4px;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 12px;
+  background: $primary;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;
+  margin-top: 4px;
+
+  &:hover {
+    background: $primary-hover;
+    box-shadow: 0 4px 16px rgba(107, 158, 206, 0.3);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}

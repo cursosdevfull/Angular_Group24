@@ -1,0 +1,19 @@
+<mat-toolbar>
+    <button mat-button [matMenuTriggerFor]="menu">
+        <div class="user-info">
+            <div>
+                <img src="{{avatarUrl}}" alt="">
+            </div>
+            <div class="info">
+                <span>{{userName}}</span>
+                <mat-icon>expand_more</mat-icon>
+            </div>
+        </div>
+    </button>
+</mat-toolbar>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="signOut()">
+        <mat-icon>logout</mat-icon>
+        <span>Cerrar sesión</span>
+    </button>
+</mat-menu>

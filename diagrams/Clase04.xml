@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.2">
+  <diagram name="1" id="KNJc7uVlEiMrwATQ2LQ4">
+    <mxGraphModel dx="1426" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F1FAEE" math="0" shadow="1">
+      <root>
+        <mxCell id="8UkgOQTshT9g5Gfez88O-0" />
+        <mxCell id="8UkgOQTshT9g5Gfez88O-1" parent="8UkgOQTshT9g5Gfez88O-0" />
+        <mxCell id="8UkgOQTshT9g5Gfez88O-2" parent="8UkgOQTshT9g5Gfez88O-1" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;rounded=1;sketch=1;strokeColor=#457B9D;fillColor=#A8DADC;fontColor=#1D3557;image=https://cursos-dev.com/assets/images/logo-horizontal.png;" value="" vertex="1">
+          <mxGeometry height="80" width="282.99" as="geometry" />
+        </mxCell>
+        <mxCell id="8UkgOQTshT9g5Gfez88O-3" parent="8UkgOQTshT9g5Gfez88O-1" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;rounded=1;sketch=1;strokeColor=#457B9D;fillColor=#A8DADC;fontColor=#1D3557;image=https://cursos-dev.com/assets/images/logo-horizontal.png;" value="" vertex="1">
+          <mxGeometry height="80" width="282.99" as="geometry" />
+        </mxCell>
+        <mxCell id="Zn8NvFHETkW2ZMuNUhi_-2" edge="1" parent="8UkgOQTshT9g5Gfez88O-1" source="Zn8NvFHETkW2ZMuNUhi_-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Zn8NvFHETkW2ZMuNUhi_-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zn8NvFHETkW2ZMuNUhi_-4" edge="1" parent="8UkgOQTshT9g5Gfez88O-1" source="Zn8NvFHETkW2ZMuNUhi_-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Zn8NvFHETkW2ZMuNUhi_-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zn8NvFHETkW2ZMuNUhi_-6" edge="1" parent="8UkgOQTshT9g5Gfez88O-1" source="Zn8NvFHETkW2ZMuNUhi_-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Zn8NvFHETkW2ZMuNUhi_-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zn8NvFHETkW2ZMuNUhi_-0" parent="8UkgOQTshT9g5Gfez88O-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="FORMULARIOS" vertex="1">
+          <mxGeometry height="60" width="210" x="300" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Zn8NvFHETkW2ZMuNUhi_-1" parent="8UkgOQTshT9g5Gfez88O-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="FORMS MODULE" vertex="1">
+          <mxGeometry height="60" width="210" x="50" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Zn8NvFHETkW2ZMuNUhi_-3" parent="8UkgOQTshT9g5Gfez88O-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="REACTIVE FORMS MODULE" vertex="1">
+          <mxGeometry height="60" width="210" x="300" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Zn8NvFHETkW2ZMuNUhi_-5" parent="8UkgOQTshT9g5Gfez88O-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="FORMS SIGNAL" vertex="1">
+          <mxGeometry height="60" width="210" x="570" y="330" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

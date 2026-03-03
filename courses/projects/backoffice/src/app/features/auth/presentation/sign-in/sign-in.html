@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="login-card">
+        <div class="login-header">
+            <h1>Bienvenido</h1>
+            <p>Inicia sesión para continuar</p>
+        </div>
+
+        <form class="login-form">
+            <div class="form-group">
+                <div class="input-wrapper">
+                    <mat-form-field subscriptSizing="dynamic">
+                        <mat-label>Correo electrónico</mat-label>
+                        <input matInput type="email" id="email" [formField]="signInForm.email" />
+                        <cdev-alert-error ngProjectAs="mat-error" [control]="signInForm.email()"
+                            title="Email"></cdev-alert-error>
+                    </mat-form-field>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-wrapper">
+                    <mat-form-field subscriptSizing="dynamic">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput [type]="visibility ? 'text' : 'password'" id="password"
+                            [formField]="signInForm.password" />
+                        <mat-icon matSuffix class="clickable" (click)="visibility=!visibility">
+                            {{ visibility ? 'visibility_off' : 'visibility' }}
+                        </mat-icon>
+                        <cdev-alert-error ngProjectAs="mat-error" [control]="signInForm.password()"
+                            title="Password"></cdev-alert-error>
+                    </mat-form-field>
+
+                </div>
+            </div>
+
+            <button type="button" matButton="filled" (click)="signIn()" [disabled]="signInForm().invalid()">Iniciar
+                sesión</button>
+        </form>
+    </div>
+</div>

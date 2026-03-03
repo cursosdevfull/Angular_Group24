@@ -13,7 +13,16 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-    "module": "preserve"
+    "module": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/components": [
+        "./projects/backoffice/src/app/shared/components/index.ts"
+      ],
+      "@shared/components/*": [
+        "./projects/backoffice/src/app/shared/components/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

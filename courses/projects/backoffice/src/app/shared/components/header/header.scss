@@ -1,0 +1,27 @@
+mat-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  align-items: center;
+  border-bottom: 1px solid #e1e1e1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
