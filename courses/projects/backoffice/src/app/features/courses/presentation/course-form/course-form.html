@@ -1,0 +1,18 @@
+<mat-dialog-content>
+    <mat-toolbar>
+        <span>{{title}}</span>
+    </mat-toolbar>
+    <div class="container">
+        <mat-form-field subscriptSizing="dynamic">
+            <mat-label>Título</mat-label>
+            <input matInput type="text" id="title" [formField]="form.title" />
+            <cdev-alert-error ngProjectAs="mat-error" [control]="form.title()" title="Título"></cdev-alert-error>
+        </mat-form-field>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <div class="actions">
+        <button matButton mat-dialog-close>Cerrar</button>
+        <button matButton (click)="save()" cdkFocusInitial>Guardar</button>
+    </div>
+</mat-dialog-actions>

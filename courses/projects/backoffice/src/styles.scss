@@ -52,4 +52,30 @@ body {
       filled-container-color: #145388,
     )
   );
+
+  @include mat.table-overrides(
+    (
+      background-color: white,
+      header-headline-color: #616161,
+      header-headline-font: Nunito,
+      header-headline-weight: 700,
+      header-headline-size: 12px,
+      row-item-outline-color: #dee2e6,
+      row-item-outline-width: 1px,
+      row-item-label-text-color: #3a3a3a,
+      row-item-label-text-font: Nunito,
+      row-item-label-text-size: 12px,
+      row-item-label-text-weight: 400,
+      row-item-label-text-line-height: 16px,
+      row-item-container-height: 30px,
+      header-container-height: 41px,
+    )
+  );
+
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: #145387,
+      container-text-color: white,
+    )
+  );
 }

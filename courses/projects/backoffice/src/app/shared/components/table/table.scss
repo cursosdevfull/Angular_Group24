@@ -1,0 +1,24 @@
+$border-color: rgba(0, 0, 0, 0.12);
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.row {
+  cursor: pointer;
+  height: 30px;
+
+  &:hover {
+    background-color: rgb(240, 240, 240);
+  }
+}
+
+.header {
+  background-color: #f9f7f6;
+
+  th {
+    border: solid 1px $border-color;
+  }
+}

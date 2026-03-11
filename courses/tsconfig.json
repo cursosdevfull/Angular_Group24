@@ -21,7 +21,19 @@
       ],
       "@shared/components/*": [
         "./projects/backoffice/src/app/shared/components/*"
-      ]
+      ],
+      "@shared/services": [
+        "./projects/backoffice/src/app/shared/services/index.ts"
+      ],
+      "@shared/services/*": [
+        "./projects/backoffice/src/app/shared/services/*"
+      ],
+      "@shared/types": [
+        "./projects/backoffice/src/app/shared/types/index.ts"
+      ],
+      "@shared/types/*": [
+        "./projects/backoffice/src/app/shared/types/*"
+      ],
     }
   },
   "angularCompilerOptions": {

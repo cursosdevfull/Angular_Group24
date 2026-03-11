@@ -20,4 +20,10 @@ $color-border: #e0e0e0;
       width: 40px;
     }
   }
+
+  .container-aditional {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 }

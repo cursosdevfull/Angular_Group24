@@ -1,0 +1,15 @@
+<ng-content></ng-content>
+<cdev-scrollbar [customStyle]="'height: calc(100vh - 64px - 56px - 40px - 80px)'">
+    <table mat-table [dataSource]="data()" class="mat-elevation-z8">
+        @for(column of metaColumns(); track column) {
+        <ng-container matColumnDef="{{ column.field }}">
+            <th mat-header-cell *matHeaderCellDef> {{ column.label }} </th>
+            <td mat-cell *matCellDef="let element"> {{ element[column.field] }} </td>
+        </ng-container>
+        }
+
+        <tr mat-header-row *matHeaderRowDef="displayColumns(); sticky: true" class="header"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayColumns()" class="row" (click)="triggerUpdate(row)">
+        </tr>
+    </table>
+</cdev-scrollbar>
