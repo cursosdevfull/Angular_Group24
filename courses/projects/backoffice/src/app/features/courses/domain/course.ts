@@ -1,4 +1,6 @@
 export class Course {
+  static #autoIncrement = 0;
+
   private readonly id: number;
   private title: string;
 
@@ -6,7 +8,7 @@ export class Course {
     if (id && id > 0) {
       this.id = id;
     } else {
-      this.id = Math.floor(Math.random() * 1000); // Simulate auto-generated ID
+      this.id = ++Course.#autoIncrement;
     }
 
     if (!title || title.trim().length < 5) {

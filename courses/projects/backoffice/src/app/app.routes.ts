@@ -18,6 +18,10 @@ export const routes: Routes = [
         path: 'courses',
         loadChildren: () => import('./features/courses/courses.routes').then((m) => m.routes),
       },
+      {
+        path: 'schedules',
+        loadChildren: () => import('./features/schedule/schedule.routes').then((m) => m.routes),
+      },
     ],
   },
 ];

@@ -13,11 +13,11 @@ import { MAT_ERROR } from '@angular/material/form-field';
 })
 export class AlertError {
   @Input() title!: string;
-  @Input() control!: FieldState<string, string>;
+  @Input() control!: FieldState<any, string>;
 
   getErrorMessages(
     title: string,
-    control: FieldState<string, string>,
+    control: FieldState<any, string>,
   ): { id: number; message: string }[] {
     let count = 0;
 

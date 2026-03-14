@@ -1,0 +1,49 @@
+<mat-dialog-content>
+    <mat-toolbar>
+        <span>{{title}}</span>
+    </mat-toolbar>
+    <div class="container">
+        <mat-form-field subscriptSizing="dynamic">
+            <mat-label>Curso</mat-label>
+            <mat-select [formField]="form.courseId">
+                @for (course of courses(); track course.properties.id) {
+                <mat-option [value]="course.properties.id">{{ course.properties.title }}</mat-option>
+                }
+            </mat-select>
+            <cdev-alert-error ngProjectAs="mat-error" [control]="form.courseId()" title="Curso"></cdev-alert-error>
+        </mat-form-field>
+        <mat-form-field subscriptSizing="dynamic">
+            <mat-label>Título</mat-label>
+            <input matInput type="text" id="title" [formField]="form.title" />
+            <cdev-alert-error ngProjectAs="mat-error" [control]="form.title()" title="Título"></cdev-alert-error>
+        </mat-form-field>
+        <mat-form-field subscriptSizing="dynamic">
+            <mat-label>Docente</mat-label>
+            <input matInput type="text" id="teacher" [formField]="form.teacher" />
+            <cdev-alert-error ngProjectAs="mat-error" [control]="form.teacher()" title="Docente"></cdev-alert-error>
+        </mat-form-field>
+        <mat-form-field subscriptSizing="dynamic">
+            <mat-label>Resumen</mat-label>
+            <input matInput type="text" id="summary" [formField]="form.summary" />
+            <cdev-alert-error ngProjectAs="mat-error" [control]="form.summary()" title="Resumen"></cdev-alert-error>
+        </mat-form-field>
+        <mat-form-field subscriptSizing="dynamic">
+            <mat-label>Precio (PEN)</mat-label>
+            <input matInput type="number" id="pricePen" [formField]="form.pricePen" />
+        </mat-form-field>
+        <mat-form-field subscriptSizing="dynamic">
+            <mat-label>Duración</mat-label>
+            <input matInput type="text" id="duration" [formField]="form.duration" />
+        </mat-form-field>
+        <mat-form-field subscriptSizing="dynamic">
+            <mat-label>Frecuencia</mat-label>
+            <input matInput type="text" id="frequency" [formField]="form.frequency" />
+        </mat-form-field>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <div class="actions">
+        <button matButton mat-dialog-close>Cerrar</button>
+        <button matButton (click)="save()" cdkFocusInitial>Guardar</button>
+    </div>
+</mat-dialog-actions>

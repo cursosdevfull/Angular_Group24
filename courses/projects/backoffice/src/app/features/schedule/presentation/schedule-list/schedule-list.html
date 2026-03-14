@@ -1,0 +1,14 @@
+<cdev-title [titleInfo]="titleInfo">
+    <button matButton="filled" (click)="openForm()">Agregar schedule</button>
+</cdev-title>
+<cdev-table [metaColumns]="metaColumns" [data]="schedules()" (onUpdateTrigger)="openForm($event)">
+    <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef style="width: 80px">&nbsp;</th>
+        <td mat-cell *matCellDef="let element">
+            <button mat-icon-button (click)="delete($event,element.scheduleId)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </td>
+    </ng-container>
+</cdev-table>
+<cdev-paginator [length]="length()" [pageSize]="pageSize()" (onChangePage)="changePage($event)"></cdev-paginator>
