@@ -1,5 +1,5 @@
 <cdev-title [titleInfo]="titleInfo">
-    <button matButton="filled" (click)="openForm()">Agregar curso</button>
+    <button matButton="filled" (click)="openForm()">Add course</button>
 </cdev-title>
 <cdev-table [metaColumns]="metaColumns" [data]="courses()" (onUpdateTrigger)="openForm($event)">
     <ng-container matColumnDef="actions">

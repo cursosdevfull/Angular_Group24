@@ -50,7 +50,7 @@ export class ScheduleForm implements OnInit {
   reference = inject<MatDialogRef<ScheduleForm>>(MatDialogRef);
   courseApplication = inject(CourseApplication);
 
-  title = this.data ? 'Editar' : 'Agregar';
+  title = this.data ? 'Edit' : 'Add';
   courses = signal<Course[]>([]);
 
   model = signal<ISchedule>({

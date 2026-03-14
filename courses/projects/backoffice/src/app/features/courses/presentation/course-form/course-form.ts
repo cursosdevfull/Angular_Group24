@@ -34,7 +34,7 @@ export class CourseForm {
 
   reference = inject<MatDialogRef<CourseForm>>(MatDialogRef);
 
-  title = this.data ? 'Editar' : 'Agregar';
+  title = this.data ? 'Edit' : 'Add';
 
   model = signal<ICourse>({
     id: this.data ? this.data.id : 0,
